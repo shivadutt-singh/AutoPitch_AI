@@ -41,7 +41,7 @@ export default function Layout() {
               <div className="w-3 h-3 border-2 border-black rotate-45 relative z-10 transition-transform duration-500 group-hover:scale-110 group-hover:border-white"></div>
             </div>
             <span className="font-semibold tracking-tight text-sm text-[#EDEDED] relative">
-              Orbit Dashboard
+              AutoPitch AI
               <span className="absolute inset-x-0 -bottom-1 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </span>
           </Link>
