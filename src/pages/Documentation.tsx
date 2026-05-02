@@ -13,20 +13,20 @@ export default function Documentation() {
       desc: "Quick start guide to running your first analysis.",
       content: (
         <div className="space-y-6 text-zinc-400 text-sm leading-relaxed">
-          <p>Welcome to the Orbit API. To get started, you'll need an API key from your settings dashboard.</p>
+          <p>Welcome to the AutoPitch API. To get started, you'll need an API key from your settings dashboard.</p>
           <div className="space-y-4">
             <h3 className="text-lg font-medium text-white">1. Installation</h3>
             <pre className="p-4 bg-[#050505] border border-[#1F1F1F] rounded-xl text-zinc-300 font-mono overflow-x-auto">
-              npm install @orbit/sdk
+              npm install @AutoPitch/sdk
             </pre>
           </div>
           <div className="space-y-4">
             <h3 className="text-lg font-medium text-white">2. Initialization</h3>
             <p>Initialize the client with your API key:</p>
             <pre className="p-4 bg-[#050505] border border-[#1F1F1F] rounded-xl text-zinc-300 font-mono overflow-x-auto">
-{`import { OrbitClient } from '@orbit/sdk';
+{`import { OrbitClient } from '@AutoPitch/sdk';
 
-const orbit = new OrbitClient({
+const orbit = new AutoPitchClient({
   apiKey: 'YOUR_API_KEY'
 });`}
             </pre>
@@ -84,7 +84,7 @@ const orbit = new OrbitClient({
             <span className="text-zinc-500 mt-2"># Login with your token</span>
             <span>orbit login</span>
             <span className="text-zinc-500 mt-2"># Run an audit</span>
-            <span>orbit audit acme-corp.com --export-pdf</span>
+            <span>autopitch audit acme-corp.com --export-pdf</span>
           </pre>
         </div>
       )
@@ -106,7 +106,7 @@ const orbit = new OrbitClient({
   "data": {
     "audit_id": "aud_890",
     "domain": "acme-corp.com",
-    "report_url": "https://orbit.so/reports/890"
+    "report_url": "https://AutoPitch.so/reports/890"
   },
   "created": 1678901234
 }`}
