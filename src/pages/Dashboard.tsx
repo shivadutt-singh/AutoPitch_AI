@@ -92,7 +92,7 @@ export default function Dashboard() {
 
     // 🚨 WARNING: Hardcoded key for hackathon demo speed. 
     // Is key ko hackathon ke baad Nvidia portal se revoke kar dena!
-    const nvidiaApiKey = "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";
+    const nvidiaApiKey = "here-your-Nvidia-nim-api-key";
     
     if (!nvidiaApiKey) {
       setSearchError('Missing NVIDIA_API_KEY. Check your code.');
